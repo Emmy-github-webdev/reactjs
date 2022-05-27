@@ -1,4 +1,4 @@
-# ReactJS
+# [ReactJS](https://reactjs.org/docs/hello-world.html)
 
 <br>
 
@@ -15,7 +15,7 @@ When you render jsx, every single element in the Virtual DOM is updated, but the
 <br>
 Once the Virtual DOM is updated, React compares the Virtual DOM with the Virtual DOM snapshot that was taken right before the update. 
 <br>
-By comparing the new Virtual DOM and the pre-updated Virtual DOM, React figure out the Virtual DOM object that has changed. This process is called <h5>diffing<h5>.
+By comparing the new Virtual DOM and the pre-updated Virtual DOM, React figure out the Virtual DOM object that has changed. This process is called _diffing_.
 <br>
 Once react knows the Virtual DOM object that has changed, React then updates those object. 
 <br>
@@ -25,3 +25,12 @@ In summary, these what happen when you try to update the DOM is React.
 - React compares the updated Virtual DOM with the pre-updated Virtual DOM snapshot, and figure out the Virtual DOM obect that has changed.
 - The changed object only get updated on the real DOM.
 - The change on the real DOM cause the screen to change.
+
+### [JSX](https://reactjs.org/docs/introducing-jsx.html)
+
+JSX was introduced along side React by Facebook in 2013. JSX is a dialet or syntax extension of JavaScript that allow us to write CSS and HTML inside JavaScript. It is important because it is the fundamental of React ecosystem, and it speed up and improve our development experience.
+
+```
+const element = <h1>Hello, World!</h1>
+
+```
