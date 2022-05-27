@@ -18,3 +18,10 @@ Once the Virtual DOM is updated, React compares the Virtual DOM with the Virtual
 By comparing the new Virtual DOM and the pre-updated Virtual DOM, React figure out the Virtual DOM object that has changed. This process is called <h5>diffing<h5>.
 <br>
 Once react knows the Virtual DOM object that has changed, React then updates those object. 
+<br>
+In summary, these what happen when you try to update the DOM is React.
+
+- The entire Virtual DOM object gets updated
+- React compares the updated Virtual DOM with the pre-updated Virtual DOM snapshot, and figure out the Virtual DOM obect that has changed.
+- The changed object only get updated on the real DOM.
+- The change on the real DOM cause the screen to change.
