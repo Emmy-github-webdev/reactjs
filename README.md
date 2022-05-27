@@ -46,9 +46,9 @@ Component is a piece of code with specific purpose that you can reuse to compose
 Class component uses ES6 syntax with some other React tools like **state**, **props**, **Lifecycle method**, and **render()** method
 
 ```
-class Welcome extend React.Component {
+class Welcome extends React.Component {
   render(){
-    return<h1>Hello, {props.name}</h2>
+    return<h1>Hello, {this.props.name}</h2>
   }
 }
 ```
@@ -61,3 +61,45 @@ function Welcome(props){
   return <h1>Hello, {props.name}</h1>
 }
 ```
+
+> Stateless functional component is the one that can receive data and render it, but does not manage or track changes to that data.
+
+> [State and Props](https://www.freecodecamp.org/news/react-js-for-beginners-props-state-explained/)
+
+State and Props are the two ways React can update component or share data between components
+
+Example with props
+
+```
+Function welcome(props){
+	Return<h1>Hello, {props.name}</h1>
+}
+```
+
+Example with state
+
+```
+import React from "react";
+import "./styles.css";
+
+export default class App extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {sleeping: true};
+  }
+
+  render(){
+    return(
+      <div>
+        <p>{`The Cat is ${this.state.sleeping ? "sleeping" : "eat"}`}</p>
+        <button onClick={() => this.setState({sleeping : false})}>
+          Wrap Me
+        </button>
+      </div>
+    )
+  }
+}
+
+```
+
+The difference between **state** and **props** is that props are set by the parent and passed to the child component and they are fixed through out the component. For the data that is going to change, we have to use state.
