@@ -34,3 +34,30 @@ JSX was introduced along side React by Facebook in 2013. JSX is a dialet or synt
 const element = <h1>Hello, World!</h1>
 
 ```
+
+### [Component](https://reactjs.org/docs/components-and-props.html)
+
+Component is a piece of code with specific purpose that you can reuse to compose and build bigger and complex application.
+
+<br>
+
+##### Types of component
+> Class Component
+Class component uses ES6 syntax with some other React tools like **state**, **props**, **Lifecycle method**, and **render()** method
+
+```
+class Welcome extend React.Component {
+  render(){
+    return<h1>Hello, {props.name}</h2>
+  }
+}
+```
+
+> Functional Component
+Functional component is just a function that returns jsx.
+
+```
+function Welcome(props){
+  return <h1>Hello, {props.name}</h1>
+}
+```
