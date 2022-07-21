@@ -103,3 +103,14 @@ export default class App extends React.Component {
 ```
 
 The difference between **state** and **props** is that props are set by the parent and passed to the child component and they are fixed through out the component. For the data that is going to change, we have to use state.
+
+### Web Storage API
+
+These mechanisms are **Local Storage** and **Session Storage**.
+- **Session Storage**: allows us to store data that persists throughout the session. That is as long as the current browser tab remains active.
+- **Local Storage**: allows us to store data that persists across the same origin even if the browser is closed, the data will not be erased and shared between all windows with the same origin.
+
+<br>
+
+Same-origin here implies – same domain (example.com); same protocol (either HTTP or HTTPS) and same port (for instance, port 80 which handles HTTP request exclusively). The URL path can be different.
+
