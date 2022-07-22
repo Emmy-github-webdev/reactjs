@@ -120,4 +120,31 @@ In React, these phases are mainly three.
 2. **Updating**: In this phase React components get updated. React components get updated when there is/are **state** or **prop** changes, hence re-render the component
 3. **Unmounting**: In this phase React components unmount or remove the DOM which marks the end of the lifecycle. 
 
+<br>
+
+The React lifecycle methods are used to monitor and manipulate what happens within the component. These includes
+1. **Render()**: It is responsible for rendering React elements in the virtual DOM and it is called during mounting and updating phase.
+2. **ComponentDidMount()**: It is called immedeately after the component is rendered.
+
+### Pure function vs. impure function
+- **Impure function**: is a function that contains one or more side effects. Example of side effect includes making a network request, subscriptions, setting up a timer, setting up event listner etc.
+```
+const fruits = ["Mango", "Orange"];
+function myFruit(newFruit){
+  fruits.push(newFruit);
+  return fruits;
+};
+```
+You can see that the function myFruit depends on external code **fruits** to accomplish its duty.
+
+- **Pure Function**: is a function that does not conatin any side effect.
+```
+function myFruit(newFruit){
+  const fruits = ["Mango", "Orange"]; 
+  fruits[fruits.length] = newFruit;
+  return fruits;
+}
+```
+You can see that the function myFruit does not depends on any external code to accomplish its duty.
+
 
