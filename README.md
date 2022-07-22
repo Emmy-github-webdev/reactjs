@@ -171,4 +171,7 @@ const InputTodo = () => {
 export default InputTodo
 ```
 
+### Using the React Hooks useEffect
+**useEffect** (as the name implies) is another built-in Hook that is called in a function component to add some effect to it. In other words, it is used to perform side-effects. You can think of useEffect Hook as class **componentDidMount**, **componentDidUpdate**, and **componentWillUnmount** combined.
+
 
