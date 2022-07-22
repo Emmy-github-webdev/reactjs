@@ -125,6 +125,8 @@ In React, these phases are mainly three.
 The React lifecycle methods are used to monitor and manipulate what happens within the component. These includes
 1. **Render()**: It is responsible for rendering React elements in the virtual DOM and it is called during mounting and updating phase.
 2. **ComponentDidMount()**: It is called immedeately after the component is rendered.
+3. **ComponentWillUnmount()**: It is called when a component is about to be destroy or removefrom the DOM.
+4. **ComponentDidupdate()**: It is called immediately the updating occurs.
 
 ### Pure function vs. impure function
 - **Impure function**: is a function that contains one or more side effects. Example of side effect includes making a network request, subscriptions, setting up a timer, setting up event listner etc.
