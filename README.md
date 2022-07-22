@@ -149,4 +149,10 @@ function myFruit(newFruit){
 ```
 You can see that the function myFruit does not depends on any external code to accomplish its duty.
 
+### React Hooks
+React Hooks are JavaScript function that allow us to build react component only with function.
+
+### Advantages of React Hooks
+One problem we offten encouter with the class lifecycle method is that we often split related logic into different lifecycle methods. Rxample is having localStorage logic present in both mounting and updating lifecycle. In function component, we can separate the logic by their purpose or how related they are and not based on lifecycle methods.,
+
 
