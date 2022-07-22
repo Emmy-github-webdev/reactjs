@@ -114,3 +114,10 @@ These mechanisms are **Local Storage** and **Session Storage**.
 
 Same-origin here implies – same domain (example.com); same protocol (either HTTP or HTTPS) and same port (for instance, port 80 which handles HTTP request exclusively). The URL path can be different.
 
+### The React Lifecycle methods
+In React, these phases are mainly three.
+1. **Mounting**: In this phase React components mount (create or insert) DOM
+2. **Updating**: In this phase React components get updated. React components get updated when there is/are **state** or **prop** changes, hence re-render the component
+3. **Unmounting**: In this phase React components unmount or remove the DOM which marks the end of the lifecycle. 
+
+
