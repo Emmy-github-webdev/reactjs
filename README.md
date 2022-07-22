@@ -153,6 +153,22 @@ You can see that the function myFruit does not depends on any external code to a
 React Hooks are JavaScript function that allow us to build react component only with function.
 
 ### Advantages of React Hooks
-One problem we offten encouter with the class lifecycle method is that we often split related logic into different lifecycle methods. Rxample is having localStorage logic present in both mounting and updating lifecycle. In function component, we can separate the logic by their purpose or how related they are and not based on lifecycle methods.,
+One problem we offten encouter with the class lifecycle method is that we often split related logic into different lifecycle methods. Rxample is having localStorage logic present in both mounting and updating lifecycle. In function component, we can separate the logic by their purpose or how related they are and not based on lifecycle methods.
+
+### Using the React Hooks useState
+
+The **useState()** Hook allows us to add some local state in a function component. Remember, in the class component as seen earlier, we defined the local state data in the state object and then, are accessed using **this.state**. Likewise, they are being updated using **this.setState** method.
+
+To replicate that in a function component, we first import the **useState** Hook from the **react** module like so:
+```
+import React, { useState } from "react"
+
+const InputTodo = () => {
+  console.log(useState("hello"))
+  return <div></div>
+}
+
+export default InputTodo
+```
 
 
